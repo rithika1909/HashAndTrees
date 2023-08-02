@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace HashAndTrees
 {
-    public class HashTable<K, V>
+    public class HashTables<K, V>
     {
         private readonly int size;
         private readonly LinkedList<KeyValue<K, V>>[] items;
-        public HashTable(int size)
+        public HashTables(int size)
         {
             this.size = size;
             this.items = new LinkedList<KeyValue<K, V>>[size];
