@@ -20,7 +20,7 @@ namespace HashAndTrees
             int position = key.GetHashCode() % size;
             return Math.Abs(position);
         }
-        public V GetV(K key)
+        public V Get(K key)
         {
             int position = GetArrayPosition(key);
             LinkedList<KeyValue<K, V>> linkedList = GetLinkedList(position);
